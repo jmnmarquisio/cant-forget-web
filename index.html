@@ -1,61 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>CAN'T FORGET!</title>
 
-  <meta
-    name="description"
-    content="CAN'T FORGET! keeps what matters visible."
-  >
+  <meta name="description" content="CAN'T FORGET! keeps what matters visible.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=20260807-2">
+  <link rel="stylesheet" href="styles.css?v=20261108-1">
 </head>
 
 <body>
   <main class="home">
 
-    <section class="center-content">
-      <div class="qr-placeholder">
-        <span>APP</span>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Can't Forget home"><img class="brand-icon" src="assets/logo.svg" alt=""
+          width="44" height="44"><span>CAN’T FORGET!</span></a>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Never forget<br>what matters.</h1>
+        <p class="hero-description">A minimalist reminder app that keeps your most important reminder visible on your
+          Home Screen.</p>
+        <a class="download-link" href="https://apps.apple.com/us/app/cant-forget/id6801567027" target="_blank"
+          rel="noopener noreferrer" aria-label="Download Can't Forget on the App Store">
+          <svg viewBox="0 0 24 28" aria-hidden="true">
+            <path
+              d="M19.4 14.8c0-3 2.5-4.5 2.6-4.6-1.4-2.1-3.6-2.4-4.4-2.4-1.9-.2-3.7 1.1-4.7 1.1s-2.5-1.1-4.1-1c-2.1 0-4 1.2-5.1 3-2.2 3.8-.6 9.4 1.5 12.5 1 1.5 2.2 3.1 3.9 3 1.6 0 2.2-1 4.2-1s2.5 1 4.2 1c1.7 0 2.8-1.5 3.8-3 1.2-1.7 1.7-3.4 1.7-3.5-.1 0-3.6-1.4-3.6-5.1ZM16.2 5.8c.9-1.1 1.5-2.6 1.3-4.1-1.3.1-2.9.9-3.8 2-.8.9-1.6 2.5-1.4 4 1.5.1 3-.8 3.9-1.9Z" />
+          </svg>
+          <span><small>Download on the</small><strong>App Store</strong></span>
+        </a>
+      </div>
+
+      <div class="phone-stage" role="img"
+        aria-label="Preview of the dark Home Screen from the onboarding, with a Call mum reminder due Today">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-status">
+              <span>9:41</span>
+              <span class="status-symbols" aria-hidden="true">
+                <svg class="status-cellular" viewBox="0 0 18 12" fill="currentColor">
+                  <rect x="0" y="8" width="3" height="4" rx=".7" />
+                  <rect x="5" y="5.5" width="3" height="6.5" rx=".7" />
+                  <rect x="10" y="3" width="3" height="9" rx=".7" />
+                  <rect x="15" y="0" width="3" height="12" rx=".7" />
+                </svg>
+                <svg class="status-wifi" viewBox="0 0 16 12" fill="currentColor">
+                  <path d="M0 3.2a12 12 0 0 1 16 0L14.1 5a9.2 9.2 0 0 0-12.2 0ZM3.2 6.3a7.2 7.2 0 0 1 9.6 0L11 8.1a4.5 4.5 0 0 0-6 0ZM6.1 9.2a2.9 2.9 0 0 1 3.8 0L8 11.2Z" />
+                </svg>
+                <svg class="status-battery" viewBox="0 0 27 13" fill="currentColor">
+                  <rect x=".5" y=".5" width="23" height="12" rx="3" fill="none" stroke="currentColor" stroke-opacity=".5" />
+                  <rect x="2" y="2" width="20" height="9" rx="1.7" />
+                  <path d="M25 4v5a2.6 2.6 0 0 0 0-5Z" opacity=".5" />
+                </svg>
+              </span>
+            </div>
+            <div class="dynamic-island"></div>
+            <div class="app-grid" aria-hidden="true">
+              <i></i><i></i><i></i><i></i>
+              <div class="reminder-widget"><strong>Call<br>mum</strong><span>Today</span></div>
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+            </div>
+            <div class="phone-caption">Never miss it again<span>• • <b>•</b></span></div>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
 
-      <a
-        href="#"
-        class="linkedin-link"
-        aria-label="LinkedIn"
-      >
+      <a href="https://www.linkedin.com/company/cant-forget-app" target="_blank" rel="noopener noreferrer"
+        class="linkedin-link" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path
-            d="M6.5 8.25H3.25V20H6.5V8.25ZM4.87 3A1.88 1.88 0 1 0 4.87 6.75 1.88 1.88 0 0 0 4.87 3ZM20.75 13.27C20.75 9.73 18.86 8.08 16.34 8.08C14.3 8.08 13.39 9.2 12.88 9.98V8.25H9.63V20H12.88V14.18C12.88 12.65 13.17 11.17 15.07 11.17C16.94 11.17 16.96 12.92 16.96 14.28V20H20.21L20.75 13.27Z"
-          />
+            d="M6.5 8.25H3.25V20H6.5V8.25ZM4.87 3A1.88 1.88 0 1 0 4.87 6.75 1.88 1.88 0 0 0 4.87 3ZM20.75 13.27C20.75 9.73 18.86 8.08 16.34 8.08C14.3 8.08 13.39 9.2 12.88 9.98V8.25H9.63V20H12.88V14.18C12.88 12.65 13.17 11.17 15.07 11.17C16.94 11.17 16.96 12.92 16.96 14.28V20H20.21L20.75 13.27Z" />
         </svg>
       </a>
 
       <div class="footer-right">
-        <a
-          href="privacy-policy.html"
-          class="footer-link"
-        >
+        <a href="privacy-policy.html" class="footer-link">
           Privacy Policy
         </a>
 
-        <a
-          href="mailto:cantforget.app@gmail.com"
-          class="footer-link"
-        >
+        <a href="mailto:cantforget.app@gmail.com" class="footer-link">
           cantforget.app@gmail.com
         </a>
       </div>
@@ -64,4 +100,5 @@
 
   </main>
 </body>
+
 </html>
