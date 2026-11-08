@@ -55,7 +55,7 @@ a {
 }
 .site-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 15px; font-size: 22px; font-weight: 800; letter-spacing: -.045em; }
-.brand-icon { display: block; width: 44px; height: 44px; border-radius: 12px; }
+.brand-icon { display: block; width: 44px; height: 44px; border-radius: 0; }
 .hero { flex: 1; width: 100%; max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: 1.25fr 1fr; align-items: center; min-height: 690px; gap: 35px; }
 .hero-copy { padding: 50px 0 80px; z-index: 1; }
 h1 { font-size: clamp(56px, 6.3vw, 100px); font-weight: 700; line-height: 1.015; letter-spacing: -.065em; }
@@ -410,7 +410,7 @@ a:focus-visible { outline: 2px solid #fff; outline-offset: 6px; }
 }
 @media (max-width: 700px) {
   .brand { font-size: 18px; gap: 12px; }
-  .brand-icon { width: 38px; height: 38px; font-size: 29px; border-radius: 10px; }
+  .brand-icon { width: 38px; height: 38px; font-size: 29px; border-radius: 0; }
   .hero { display: flex; flex-direction: column; gap: 0; align-items: stretch; }
   .hero-copy { padding: 65px 0 25px; }
   h1 { font-size: clamp(49px, 10vw, 70px); }
